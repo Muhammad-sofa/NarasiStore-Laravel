@@ -1,109 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
+@extends('layouts.app')
 
-    <title>Store - Your Best Marketplace</title>
+@section('title')
+    Store Cart Page
+@endsection
 
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <link href="style/main.css" rel="stylesheet" />
-  </head>
-
-  <body>
-    <!-- Navigation -->
-    <nav
-      class="navbar navbar-expand-lg navbar-light navbar-store fixed-top navbar-fixed-top"
-      data-aos="fade-down"
-      aria-label="Navbar"
-    >
-      <div class="container">
-        <a class="navbar-brand" href="/">
-          <img src="/images/logo.png" alt="" />
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarResponsive"
-          aria-controls="navbarResponsive"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="/">Home </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/categories.html">Categories</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Rewards</a>
-            </li>
-          </ul>
-
-          <!-- Desktop Menu -->
-          <ul class="navbar-nav d-none d-lg-flex">
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link"
-                href="#"
-                id="navbarDropdown"
-                role="button"
-                data-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
-              >
-                <img
-                  src="/images/icon-user.png"
-                  alt=""
-                  class="rounded-circle mr-2 profile-picture"
-                /> 
-                Hi, Sofa
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="/dashboard.html">Dashboard</a>
-                <a class="dropdown-item" href="/dashboard-account.html"
-                  >Settings</a
-                >
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="/">Logout</a>
-              </div>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link d-inline-block mt-2" href="#">
-                <img src="/images/icon-cart-filled.svg" alt="" />
-                <div class="cart-badge">3</div>
-              </a>
-            </li>
-          </ul>
-
-          <!-- Mobile Menu -->
-          <ul class="navbar-nav d-block d-lg-none">
-            <li class="nav-item">
-              <a class="nav-link" href="#">
-                Hi, Angga
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link d-inline-block" href="#">
-                Cart
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-
-    <!-- Page Content -->
+@section('content')
+         <!-- Page Content -->
     <div class="page-content page-cart">
       <section
         class="store-breadcrumbs"
@@ -230,7 +132,7 @@
                   id="addressOne"
                   aria-describedby="emailHelp"
                   name="addressOne"
-                  value="Setra Duta Cemara"
+                  value=""
                 />
               </div>
             </div>
@@ -243,7 +145,7 @@
                   id="addressTwo"
                   aria-describedby="emailHelp"
                   name="addressTwo"
-                  value="Blok B2 No. 34"
+                  value=""
                 />
               </div>
             </div>
@@ -251,7 +153,7 @@
               <div class="form-group">
                 <label for="province">Province</label>
                 <select name="province" id="province" class="form-control">
-                  <option value="West Java">West Java</option>
+                  <option value="West Java"></option>
                 </select>
               </div>
             </div>
@@ -259,7 +161,7 @@
               <div class="form-group">
                 <label for="city">City</label>
                 <select name="city" id="city" class="form-control">
-                  <option value="Bandung">Bandung</option>
+                  <option value="Bandung"></option>
                 </select>
               </div>
             </div>
@@ -271,7 +173,7 @@
                   class="form-control"
                   id="postalCode"
                   name="postalCode"
-                  value="40512"
+                  value=""
                 />
               </div>
             </div>
@@ -283,7 +185,7 @@
                   class="form-control"
                   id="country"
                   name="country"
-                  value="Indonesia"
+                  value=""
                 />
               </div>
             </div>
@@ -295,7 +197,7 @@
                   class="form-control"
                   id="mobile"
                   name="mobile"
-                  value="+628 2020 11111"
+                  value=""
                 />
               </div>
             </div>
@@ -337,26 +239,4 @@
         </div>
       </section>
     </div>
-
-    <footer>
-      <div class="container">
-        <div class="row">
-          <div class="col-12 text-center">
-            <p class="pt-4 pb-2">
-              2019 Copyright Store. All Rights Reserved.
-            </p>
-          </div>
-        </div>
-      </div>
-    </footer>
-
-    <!-- Bootstrap core JavaScript -->
-    <script src="/vendor/jquery/jquery.slim.min.js"></script>
-    <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
-    <script src="/script/navbar-scroll.js"></script>
-  </body>
-</html>
+@endsection
